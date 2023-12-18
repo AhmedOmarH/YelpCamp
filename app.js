@@ -28,7 +28,7 @@ const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp';
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect(dbUrL);
+  await mongoose.connect(dbUrl);
 
   // use `await mongoose.connect('mongodb://user:password@localhost:27017/test');` if your database has auth enabled
 }
